@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>STARBYTE Role Play : Login - Register</title>
+    <link rel="stylesheet" href="auth.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<body>
+  <div class="container">
+    <div class="box">
+      <form id ="register">
+        <img  class="logo" src="logo.png">
+        <span class="text">STARBYTE ROLEPLAY</span>
+        <br>
+        <br>
+        <span class="names">NAME</span>
+        <input class="inputs-1" placeholder="username" type="text">
+        <span class="names">PASSWORD</span>
+        <input class="inputs-1"placeholder="*******"  type="password">
+        <span class="names">MAIL</span>
+        <input class="inputs-1"placeholder="startbyerp@gmail.com"  type="email">
+        <div id="btn"></div>
+        <button class="register">REGISTER</button>
+        <button class="login" >LOGIN</button>
+      </form>
+      <form style="display:none" id ="login">
+        <img  class="logo" src="logo.png">
+        <span class="text">STARBYTE ROLEPLAY</span>
+        <br>
+        <br>
+        <span class="names">NAME</span>
+        <input class="inputs-1" placeholder="username" type="text">
+        <span class="names">PASSWORD</span>
+        <input class="inputs-1"placeholder="*******"  type="password">
+        <span class="names">MAIL</span>
+        <input class="inputs-1"placeholder="startbyerp@gmail.com"  type="email">
+        <div id="btn"></div>
+        <button class="register">REGISTER</button>
+        <button class="login" >LOGIN</button>
+      </form>
+    </div>
+    <div class="right-side"></div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="auth.js"></script>
+  <script>
+    $('.login').click(function(){
+      $('form').animate({height:"toggle",opacity:"toggle"},"slow")
+    })
+  </script>
+</body>
+</html>
